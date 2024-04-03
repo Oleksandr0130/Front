@@ -20,7 +20,8 @@ html {
 body {
     margin: 0px;
 }
-.bg {    
+.bg {
+    margin: 4px;    
     background-color: rgb(49, 49, 49);
     height: 30px;
 }
