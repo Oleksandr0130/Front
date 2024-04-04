@@ -17,9 +17,11 @@ body {
 }
 .wrapper{
     width: 420px;
-    background: transparent;
+    background: url(../images/build-pc.jpg);
+    background-position: center;
+    background-size: cover;
     color: white;
-    border-radius: 10px;
+    border-radius: 0px 60px 0 60px;
     padding: 30px 40px;
 }
 .wrapper h1{

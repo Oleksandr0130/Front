@@ -1,0 +1,32 @@
+.table, .table2, .table3  {
+    width: 100px;
+    height: 100px;
+    background: red;
+    display: flex inline;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    
+}
+.table2{
+    background: yellow;
+}
+.table3 {
+    background: green;
+    position: relative;
+    bottom: 0;
+}
+.container {
+    position: relative;
+    height: 100vh; /* Высота контейнера будет равна высоте окна просмотра */
+    display: flex;
+    justify-content: center; /* Выравнивание содержимого по горизонтали по центру */
+    align-items: flex-end; /* Выравнивание содержимого по вертикали к нижнему краю */
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+}
