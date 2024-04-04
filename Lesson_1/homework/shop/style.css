@@ -25,6 +25,7 @@ body {
     background-color: rgb(49, 49, 49);
     height: 30px;
     text-align: right;
+    border-radius: 40px 0;
 }
 .ul {
     margin: 2px;
