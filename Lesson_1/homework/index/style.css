@@ -17,6 +17,7 @@ html {
     background-size: cover;
     
     }
+
 body {
     margin: 0px;
 }
@@ -36,6 +37,7 @@ body {
     font-size: 15px;
     position: relative;
     top: -9px;
+    
 }
 .foto {
     padding: 0px;

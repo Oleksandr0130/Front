@@ -1,6 +1,6 @@
 html {
 
-    background-image: url(images/gaming_pc_headline_pcs.jpg);
+    background-image: url(../images/gaming_pc_headline_pcs.jpg);
     
     background-repeat: no-repeat;
     
@@ -24,15 +24,16 @@ body {
     margin: 4px;    
     background-color: rgb(49, 49, 49);
     height: 30px;
+    text-align: right;
 }
 .ul {
-    margin: 4px;
+    margin: 2px;
 }
 .li1 {
     display: inline-block;
     padding: 13px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     position: relative;
     top: -9px;
 }
