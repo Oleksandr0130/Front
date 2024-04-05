@@ -54,3 +54,14 @@ body {
     padding: 0px;  
     text-align: center;
 }
+.tp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.art {
+    display: inline;
+    padding-top: 10px;
+    padding-left: 10px;
+}

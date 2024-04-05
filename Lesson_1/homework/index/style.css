@@ -16,7 +16,12 @@ html {
     
     background-size: cover;
     
-    }
+}
+.wrapper {
+    min-height: calc(100vh - 30px);
+    margin-bottom: 30px;
+    position: relative;
+}
 
 body {
     margin: 0px;
@@ -54,4 +59,40 @@ body {
     font-size: 20px;  
     padding: 0px;  
 }
+.footer {
+    margin: 0px;
+    position: relative;
+    display: flex auto;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    color: white;
+}
+.divider {
+    margin: 0;
+    height: 2px;
+    background-color: white;
+}
+.container {
+    margin-top: 0;
+    background-color: grey;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+p {
+    margin: 0;
+}
+.column {
+    display: block;
+    position:relative;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}
+
 
