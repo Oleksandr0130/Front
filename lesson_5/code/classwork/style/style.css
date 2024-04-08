@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#block {
+    top: 100px;
+    position: relative;
+    width: calc(100vw - 300px);
+    height: 400px;
+    left: 150px;
+    right: 150px;
+    background-color: blue;
+}
+#block2 {
+    position: absolute;
+    width: 50%;
+    height: 200px; 
+    left: 25%;
+    background-color: black;
+}
