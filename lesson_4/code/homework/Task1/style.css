@@ -17,13 +17,13 @@ main{
     align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
-    height: calc(100vh - 310px);
+    min-height: calc(100vh - 310px);
     background-color: blueviolet;
 }
 footer{
     align-items: center;
-    display: flex;
-    position: fixed;
+    display:flex;
+    position:relative;
     justify-content: center;
     bottom: 0;
     width: 100%;
