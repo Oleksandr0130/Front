@@ -1,13 +1,13 @@
+
 .bg {
-height: 900px;
-width: 90%;
-border: 1px solid black;
-background-image: url(https://vetson.ru/upload/iblock/1bd/c73x437pcxc6afyjij70rduo6rw7g0rh.png);
-background-repeat: no-repeat;
-/* background-repeat: repeat-x; */
+border: 2px solid black;
+height: 600px;
+background-image: url(https://murmandecor.ru/upload/resize_cache/iblock/b94/2o07rxjggn26jf3jnlhlm46bj0aeiogv/400_400_140cd750bba9870f18aada2478b24840a/df8debf8_3a72_11e9_97c1_e03f4952c65a_3d67e648_52b8_11ed_9c43_005056893620.jpg);
+background-size: auto 100px;
+background-repeat: repeat-x;
 /* background-repeat: repeat-y; */
 /* background-size: 50%; */
-background-size: contain;
+/* background-size: contain; */
 background-position: center;
 /* background-position: 50% 50%; */
 /* background-size: cover; */
