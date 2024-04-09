@@ -3,12 +3,11 @@ body {
     padding: 0;
 }
 .block {
+    margin: auto;
     top: 10px;
     position: relative;
     width: calc(100vw - 300px);
     height: 700px;
-    left: 150px;
-    right: 150px;
     background: linear-gradient(blue, white);
     border: 2px solid black;
     border-radius: 5px;
