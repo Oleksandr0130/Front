@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
 
     background-image: url(../images/gaming_pc_headline_pcs.jpg);
@@ -33,9 +38,7 @@ body {
     text-align: right;
     border-radius: 40px 0;
 }
-.ul {
-    margin: 2px;
-}
+
 .li1 {
     display: inline-block;
     padding: 13px;

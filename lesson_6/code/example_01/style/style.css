@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    height: 900px;
+    background-color: blue;
+    gap: 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+}
+.flex-container div {
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    font-size: 36px;
+}
