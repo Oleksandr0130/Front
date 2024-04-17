@@ -13,3 +13,5 @@ const min = Math.min(...array)
 console.log('min = ' + min)
 const max = Math.max(...array)
 console.log('max = ' + max)
+const sum = min + max
+console.log('sum = ' + sum)

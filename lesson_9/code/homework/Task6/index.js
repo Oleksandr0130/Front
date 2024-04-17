@@ -3,7 +3,8 @@
 // на слова и вывести в консоль по одному слову в строке.
 
 const string = "Итак, самое длинное научное название: метилпропенилендигидроксициннаменилакрилическая кислота."
-const words = string.split(' ')
+const wordWithOut = string.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
+const words = wordWithOut.split(' ')
 words.forEach(word =>{
     console.log(word)
 })
