@@ -1,7 +1,12 @@
-const player1 = (player) =>{
-    let randomGoals = Math.round(Math.random() * 21)
-    player.goals = randomGoals
-    return player
+// const player1 = (player) =>{
+//     let randomGoals = Math.round(Math.random() * 21)
+//     player.goals = randomGoals
+//     return player
+// }
+
+const player1 = (player) => {
+    let copyPlayer = {...player, goals : Math.round(Math.random() * 21)}
+    return copyPlayer
 }
 
 const weightandHeightPlayer = (player) => {
@@ -49,5 +54,7 @@ let players = [
     console.log(weightPlayerFilter)
     
     console.log ('============playersGoal==========')
-    players.sort(playersSort)
-    console.log (players)
+    // players.sort(playersSort)
+    // console.log (players)
+    let sortedPlayers = [...playersWithGoal].sort(playersSort)
+    console.log(sortedPlayers)
