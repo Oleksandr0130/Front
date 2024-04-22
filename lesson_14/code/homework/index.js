@@ -4,13 +4,15 @@ const player1 = (player) =>{
     return player
 }
 
-const weightPlayer = (player) => {
-    return player.weight < 80
+const weightandHeightPlayer = (player) => {
+    if (player.height >= 180 && player.weight < 80){
+        return weightandHeightPlayer
+    }
 }
 
-const heightPlayer = (player) => {
-    return player.height >= 180
-}
+// const heightPlayer = (player) => {
+//     return player.height >= 180
+// }
 
 const playersSort = (goals1, goals2) => {
     return goals1.goals < goals2.goals ? -1 : 1
@@ -38,12 +40,12 @@ let players = [
     const playersWithGoal = players.map(player1)
     console.log(playersWithGoal)
 
-    console.log ('============heightPlayer==========')
-    const heightPlayerFilter = playersWithGoal.filter(heightPlayer)
-    console.log(heightPlayerFilter)
+    // console.log ('============heightPlayer==========')
+    // const heightPlayerFilter = playersWithGoal.filter(heightPlayer)
+    // console.log(heightPlayerFilter)
 
-    console.log ('============weightPlayer==========')
-    const weightPlayerFilter = playersWithGoal.filter(weightPlayer)
+    console.log ('============weightandHeightPlayer==========')
+    const weightPlayerFilter = playersWithGoal.filter(weightandHeightPlayer)
     console.log(weightPlayerFilter)
     
     console.log ('============playersGoal==========')
