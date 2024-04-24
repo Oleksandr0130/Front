@@ -28,18 +28,20 @@ const callBack = (elem) => {
 const array3 = array1.map(callBack)
 console.log(array3)
 
+console.log("=======method filter=========Start")
 // method filter
 const callBackFilter = (elem) => {
     // if (elem > 4){
-    //     return true
-    // }else {
-    //     return false
-    // }
-    return elem > 4 ? true : false
-}
-
-const arrayFilter = array1.filter(callBackFilter)
-console.log(arrayFilter)
+        //     return true
+        // }else {
+            //     return false
+            // }
+            return elem > 4 ? true : false
+        }
+        
+        const arrayFilter = array1.filter(callBackFilter)
+        console.log(arrayFilter)
+        console.log("=======method filter=========End")
 
 // method slice
 

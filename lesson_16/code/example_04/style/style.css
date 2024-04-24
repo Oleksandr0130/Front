@@ -1,0 +1,22 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (min-width: 601px) {
+    .parent {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 901px) {
+    .parent {
+        gap: 100px;
+        flex-direction: column;
+    }
+}
+.inner {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
