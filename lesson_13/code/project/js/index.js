@@ -122,13 +122,13 @@ function changeStatus(event){
     }
     list.addEventListener('click', changeStatus)
 
-    // Слушатель для кнопки очистки должен быть стрелочным
+
 clearOneBtnElement.addEventListener('click', () => {
-    arrayObject = arrayObject.filter(deleteElement); // Удаляем задачи с done === true
-    pushElements(); // Обновляем список на экране
+    arrayObject = arrayObject.filter(deleteElement);
+    pushElements();
 });
 
-// Функция, определяющая, какие задачи оставить
+
 function deleteElement(element) {
-    return (element.done === false); // Удаляем только те, у кого done === false
+    return (element.done === false);
 }
