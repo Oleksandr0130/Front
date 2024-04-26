@@ -42,23 +42,47 @@ const list = document.querySelector('.list')
 const clearOneBtnElement = document.querySelector('#clear-one')
 const listElement = document.querySelector('#list')
 
+
+
 // Переменные и Начальный Список
 // arrayObject - это массив объектов, представляющий изначальный список задач. Каждый объект содержит три ключа:
 // task (строка) — описание задачи.
 // date (строка) — дата выполнения задачи.
 // done (логическое значение) — показывает, завершена ли задача (true) или нет (false).
 let arrayObject = [
-    {"task": "Купить продукты", "date": "2024-04-22", "done": true},
-    {"task": "Позвонить другу", "date": "2024-04-23", "done": false},
-    {"task": "Посетить врача", "date": "2024-04-24", "done": false},
-    {"task": "Заплатить за квартиру", "date": "2024-04-25", "done": true},
-    {"task": "Подготовить отчет", "date": "2024-04-26", "done": false},
-    {"task": "Починить автомобиль", "date": "2024-04-27", "done": true},
-    {"task": "Посадить цветы", "date": "2024-04-28", "done": false},
-    {"task": "Прочитать книгу", "date": "2024-04-29", "done": true},
-    {"task": "Сходить в спортзал", "date": "2024-04-30", "done": false},
-    {"task": "Приготовить ужин", "date": "2024-05-01", "done": true}
+    // {"task": "Купить продукты", "date": "2024-04-22", "done": true},
+    // {"task": "Позвонить другу", "date": "2024-04-23", "done": false},
+    // {"task": "Посетить врача", "date": "2024-04-24", "done": false},
+    // {"task": "Заплатить за квартиру", "date": "2024-04-25", "done": true},
+    // {"task": "Подготовить отчет", "date": "2024-04-26", "done": false},
+    // {"task": "Починить автомобиль", "date": "2024-04-27", "done": true},
+    // {"task": "Посадить цветы", "date": "2024-04-28", "done": false},
+    // {"task": "Прочитать книгу", "date": "2024-04-29", "done": true},
+    // {"task": "Сходить в спортзал", "date": "2024-04-30", "done": false},
+    // {"task": "Приготовить ужин", "date": "2024-05-01", "done": true}
 ]
+
+fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(response => response.json())
+    .then(data => {
+        const reducedData = data.slice(0, 15);
+
+        // Преобразуем каждый элемент в нужный формат
+        const transformedData = reducedData.map(item => ({
+            task: item.title,
+            date: '2024-12-31',  
+            done: item.completed
+        }));
+
+        // Обновляем arrayObject новыми данными
+        arrayObject = transformedData;
+
+       
+        pushElements();
+    })
+    .catch(error => {
+        console.error('Ошибка при получении данных:', error);
+    });
 
 // Функция callBackArray
 // Эта функция принимает объект задачи и создает элемент HTML (<li>), представляющий задачу в списке.

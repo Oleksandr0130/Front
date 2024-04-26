@@ -20,6 +20,9 @@ buttonStart.addEventListener('click', () => {
     intervalID = setInterval(() => {
         if(startCounter >= 0){
             spanElement.innerText = startCounter
+            if (startCounter === 5){
+                alert ('Осталось 5 секунд!!!!!')
+            }
             startCounter--
         }else{
             clearInterval(intervalID)
