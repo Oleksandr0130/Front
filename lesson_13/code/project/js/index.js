@@ -67,17 +67,12 @@ fetch('https://jsonplaceholder.typicode.com/todos')
     .then(data => {
         const reducedData = data.slice(0, 15);
 
-        // Преобразуем каждый элемент в нужный формат
         const transformedData = reducedData.map(item => ({
             task: item.title,
             date: '2024-12-31',  
             done: item.completed
         }));
-
-        // Обновляем arrayObject новыми данными
         arrayObject = transformedData;
-
-       
         pushElements();
     })
     .catch(error => {
