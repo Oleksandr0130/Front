@@ -30,6 +30,7 @@ html {
 
 body {
     margin: 0px;
+    
 }
 .bg {
     margin: 4px;    
@@ -65,38 +66,48 @@ body {
 .footer {
     margin: 0px;
     position: relative;
-    display: flex auto;
     justify-content: center;
     align-items: flex-end;
     bottom: 0;
     width: 100%;
-    height: 30px;
+    height: 20px;
     color: white;
 }
 .divider {
+    bottom: 5px;
     margin: 0;
+    width: 100%;
     height: 2px;
     background-color: white;
 }
-.container {
+.container{
     margin-top: 0;
     background-color: rgb(68, 68, 68);
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 20px;
 }
-p {
-    margin: 0;
+h2{
+    color: white;
 }
-.column {
+a{
+    text-decoration: dashed;
+    text-decoration-color: white; 
+    
+}
+.maps{
+    color: rgb(214, 214, 214);
+    font-size: 20px; 
+}
+
+.column{
     display: block;
     position:relative;
     justify-content: center;
     align-content: center;
     text-align: center;
-    color: white;
-
+    color: rgb(214, 214, 214);
+    font-size: 18px;
+    line-height: 1.5;
 }
-
-

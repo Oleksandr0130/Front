@@ -52,3 +52,73 @@ body {
     font-size: 20px;  
     padding: 0px;  
 }
+.mission{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid rgb(155, 155, 155);
+}
+.main{
+   /* min-height: max-content; */
+   color: white;
+   font-size: 18px;
+}
+.ma{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.ma1{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.ma2{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.block{
+    background-image: url(../images/features-rtx4060ti.jpg);
+    position: relative;
+    display: flex;
+    width: 1020px;
+    height: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    border-radius: 20px 0 0 20px;
+    
+    
+}
+.block_1{
+    background-image: url(../images/features-ryzen.jpg);
+    position: relative;
+    display: flex;
+    width: 1020px;
+    height: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    border-radius: 20px 0 0 20px;
+    
+}
+
+.block_2{
+    background-image: url(../images/InfinityA57T_header.jpg);
+    position: relative;
+    display: flex;
+    width: 1020px;
+    height: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    border-radius: 0 20px 20px 0;
+    
+}
