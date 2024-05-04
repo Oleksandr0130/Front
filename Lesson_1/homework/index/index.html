@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styleSlide.css">
+    <link rel="stylesheet" href="styleBlocks.css">
+    <script src="./js/index.js" defer></script>
     <link type="image" rel="shortcut icon" href="../images/logo.jpg">
-    <title>GamingPC - Игровые компьютеры под заказ</title>
+    <title>Gaming-PC - Игровые компьютеры под заказ</title>
 </head>
 <body>
     <div class="wrapper">
     <header>
         <nav>
             <div class="bg">
+                <a href="../index/"><img src="../images/Gaming-PC Logo1.jpg" alt="" class="logo"></a>
                 <ul class="ul">
                    <a href="../index/"> <li class="li1">Главная</li></a>
                    <a href="../shop/"><li class="li1">Магазин</li></a> 
@@ -22,7 +26,38 @@
         </nav>
     </header>
     <main class="ma">
+        <div class="slideshow-container">
+            <!-- Слайды -->
+            <div class="slide">
+                <img src="../images/Gaming-PC.jpg" alt="Слайд 1">
+            </div>
+            <div class="slide">
+                <img src="../images/nvidia-geforce-rtx-4090-gpu800x300.jpg" alt="Слайд 2">
+            </div>
+            <div class="slide">
+                <img src="../images/1681807643_kartinki-pibig-info-p-kartinki-igrovoi-kompyuter-arti-krasivo-12.jpg" alt="Слайд 3">
+            </div>
         
+            <!-- Кнопки "вперед" и "назад" -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        
+        <!-- Точки-индикаторы -->
+        <div class="dots">
+            <span class="dot" onclick="setCurrentSlide(1)"></span>
+            <span class="dot" onclick="setCurrentSlide(2)"></span>
+            <span class="dot" onclick="setCurrentSlide(3)"></span>
+        </div>
+    </main>
+    <main class="blockInfo">
+        <div class="block1">
+            <div><h2>Оптимальные игровые компьютеры</h2></div><br>
+            <div class="divid"></div>
+            <div>Современные игровые компьютеры с процессорами Intel Core и AMD Ryzen
+                a также NVIDIA GeForce RTX предлагают идеальное сочетание производительности и
+                стоимости. Максимум эффективности без лишнего.</div>
+        </div>
     </main>
 </div>
 <div class="divider"></div>

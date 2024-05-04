@@ -30,24 +30,31 @@ html {
 
 body {
     margin: 0px;
-    
+}
+.logo{
+    height: 30px;
+    border-radius: 30px 0;
 }
 .bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 4px;    
     background-color: rgb(49, 49, 49);
-    height: 30px;
+    height: 40px;
     text-align: right;
-    border-radius: 40px 0;
+    border-radius: 20px 0;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
 }
 
 .li1 {
-    display: inline-block;
     padding: 13px;
     color: white;
     font-size: 15px;
-    position: relative;
-    top: -9px;
-    
 }
 .foto {
     padding: 0px;

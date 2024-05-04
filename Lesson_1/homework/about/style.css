@@ -20,23 +20,30 @@ html {
 body {
     margin: 0px;
 }
+.logo{
+    height: 30px;
+    border-radius: 30px;
+}
 .bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 4px;    
     background-color: rgb(49, 49, 49);
-    height: 30px;
+    height: 40px;
     text-align: right;
-    border-radius: 40px 0;
+    border-radius: 20px 0;
 }
-.ul {
-    margin: 2px;
+ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
 }
+
 .li1 {
-    display: inline-block;
     padding: 13px;
     color: white;
     font-size: 15px;
-    position: relative;
-    top: -9px;
 }
 .foto {
     padding: 0px;
@@ -65,6 +72,7 @@ body {
    /* min-height: max-content; */
    color: white;
    font-size: 18px;
+   line-height: 1.5;
 }
 .ma{
     margin: 10px;
@@ -84,6 +92,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
 }
+h2{
+    text-align: center;
+}
 .block{
     background-image: url(../images/features-rtx4060ti.jpg);
     position: relative;
@@ -94,31 +105,33 @@ body {
     background-repeat: no-repeat;
     justify-content: flex-end;
     border-radius: 20px 0 0 20px;
-    
+    align-items: center;
     
 }
 .block_1{
     background-image: url(../images/features-ryzen.jpg);
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-rows: 100px 100px;
     width: 1020px;
     height: 360px;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: flex-end;
     border-radius: 20px 0 0 20px;
-    
+    align-items: center;
 }
+
 
 .block_2{
     background-image: url(../images/InfinityA57T_header.jpg);
     position: relative;
-    display: flex;
+    display: block;
     width: 1020px;
     height: 360px;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: flex-start;
     border-radius: 0 20px 20px 0;
-    
+    padding-left: 20px;
 }

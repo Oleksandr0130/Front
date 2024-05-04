@@ -1,0 +1,66 @@
+        /* Основной контейнер слайд-шоу */
+        .slideshow-container {
+            max-width: 800px;
+            max-height: 300px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            
+        }
+
+        /* Каждый слайд */
+        .slide {
+            display: none; /* Скрываем слайды */
+            width: 100%;
+        }
+
+        /* Кнопки "вперед" и "назад" */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 18px;
+            display: none;/* Скрываем стрелки по умолчанию */
+            z-index: 1;/* Убедимся, что стрелки над слайдами */
+        }
+
+        /* Позиции кнопок "вперед" и "назад" */
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Появление стрелок при наведении на контейнер слайд-шоу */
+        .slideshow-container:hover .prev,
+        .slideshow-container:hover .next {
+            display: block; /* Показываем стрелки при наведении */
+        }
+
+        /* Точки-индикаторы для перехода к слайду */
+        .dots {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .active {
+            background-color: #717171;
+        }
