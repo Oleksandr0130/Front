@@ -77,3 +77,5 @@ function addToCart(product) {
     console.log('Товар добавлен в корзину:', product);
     alert(`Товар добавлен в корзину: ${product.description.replace(/<br>/g, '\n')}`);
 }
+
+
